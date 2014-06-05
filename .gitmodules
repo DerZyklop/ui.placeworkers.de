@@ -1,0 +1,3 @@
+[submodule "patternlab/kirby"]
+	path = patternlab/kirby
+	url = https://github.com/getkirby/kirby.git

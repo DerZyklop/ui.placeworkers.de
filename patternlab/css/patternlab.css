@@ -1,0 +1,175 @@
+/* App */
+.pl {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Topbar */
+.pl-topbar {
+  background: #333;
+}
+.pl-topbar * {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.pl-menu,
+.pl-submenu {
+  padding: 0;
+  margin: 0;
+}
+.pl-menu-item {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  width: 50%;
+  border-bottom: 1px solid #444;
+}
+.pl-menu-link,
+.pl-submenu-link {
+  border: 0;
+  text-decoration: none;
+  color: #999;
+  display: block;
+  padding: 15px 40px;
+}
+.pl-menu-link {
+  border-right: 1px solid #444;
+}
+.pl-menu-item-active > a,
+.pl-submenu-item-active > a {
+  color: #fff;
+}
+.pl-menu-item > a:hover,
+.pl-submenu-item > a:hover {
+  color: #fff;
+}
+
+
+.pl-submenu {
+  position: absolute;
+  z-index: 1;
+  margin-top: 1px;
+  background: #222;
+  display: none;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .pl-menu-item {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .pl-menu-item {
+    width: 16.66%;
+  }
+}
+
+
+.pl-submenu:after {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: 40px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #222;
+}
+.pl-menu-item:hover .pl-submenu {
+  display: block;
+}
+.pl-submenu-item {
+  list-style: none;
+}
+.pl-submenu-link {
+  padding: 15px 40px 15px 40px;
+  border-bottom: 1px solid #333;
+}
+.pl-submenu-link:hover {
+  background: #252525;
+  color: #fff;
+}
+/* Pattern List */
+.pl-pattern {
+  margin-bottom: 90px;
+}
+.pl-pattern-headline {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #777;
+  line-height: 18px;
+}
+.pl-pattern-headline > a {
+  text-decoration: none;
+  color: inherit;
+  font-family: Arial, sans-serif;
+}
+.pl-pattern-headline > a:hover {
+  color: #000;
+}
+.pl-pattern-body {
+  position: relative;
+}
+
+/* Color List */
+.pl-colors {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+.pl-color {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 4px;
+  margin: 0 4px 4px 0;
+  background: #fff;
+}
+.pl-swatch {
+  width: 6em;
+  height: 3em;
+  margin-bottom: .5em;
+  line-height: 18px;
+}
+.pl-color > span {
+  display: block;
+  font-family: Arial, sans-serif;
+}
+.pl-swatch-label > small {
+  display: block;
+  font-family: Arial, sans-serif;
+  color: #999;
+}
+
+/* Main frame */
+.pl-main {
+  padding: 20px 40px 60px;
+}
+
+/* Error Page */
+.pl-error * {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+/* Code View */
+.pl-codeview {
+  display: block;
+  margin-top: 100px;
+  padding: 20px;
+  background: #efefef;
+  overflow: auto;
+}
+.pl-codeview,
+.pl-codeview * {
+  font-family: Menlo, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 22px;
+}

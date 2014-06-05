@@ -1,0 +1,1 @@
+<?php snippet('colors', array('pattern' => $pattern)) ?>
