@@ -5,7 +5,9 @@
   </h2>
 
   <div class="pl-pattern-body">
-    <?php snippet('pattern', array('pattern' => $pattern)) ?>
+    <div class="<?php echo $pattern->wrap() ?>">
+      <?php snippet('pattern', array('pattern' => $pattern)) ?>
+    </div>
   </div>
 
 </div>

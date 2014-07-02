@@ -1,0 +1,9 @@
+.field-with-error .input {
+  border-color: #b3000a;
+}
+.field-with-error .input:focus {
+  border-color: #000;
+}
+.field-with-error .label {
+  color: #b3000a;
+}

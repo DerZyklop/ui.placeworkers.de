@@ -6,10 +6,26 @@
 }
 
 /* Topbar */
-.pl-topbar {
+.pl-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
   background: #333;
+  padding: 20px;
+  z-index: 1;
 }
-.pl-topbar * {
+.pl-sidebar:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 200px;
+  bottom: 0;
+  background: #333;
+  z-index: -1;
+}
+.pl-sidebar * {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -21,10 +37,8 @@
 }
 .pl-menu-item {
   position: relative;
-  display: inline-block;
   list-style: none;
-  width: 50%;
-  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
 }
 .pl-menu-link,
 .pl-submenu-link {
@@ -32,10 +46,13 @@
   text-decoration: none;
   color: #999;
   display: block;
-  padding: 15px 40px;
+  padding: 10px 0;
+  font-size: 14px;
 }
 .pl-menu-link {
-  border-right: 1px solid #444;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #444;
 }
 .pl-menu-item-active > a,
 .pl-submenu-item-active > a {
@@ -48,36 +65,12 @@
 
 
 .pl-submenu {
-  position: absolute;
-  z-index: 1;
+  z-index: 100000000;
   margin-top: 1px;
-  background: #222;
-  display: none;
   min-width: 100%;
 }
 
-@media screen and (min-width: 500px) {
-  .pl-menu-item {
-    width: 33.33%;
-  }
-}
 
-@media screen and (min-width: 800px) {
-  .pl-menu-item {
-    width: 16.66%;
-  }
-}
-
-
-.pl-submenu:after {
-  position: absolute;
-  content: "";
-  top: -7px;
-  left: 40px;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #222;
-}
 .pl-menu-item:hover .pl-submenu {
   display: block;
 }
@@ -85,11 +78,9 @@
   list-style: none;
 }
 .pl-submenu-link {
-  padding: 15px 40px 15px 40px;
-  border-bottom: 1px solid #333;
+  padding: 5px 20px;
 }
 .pl-submenu-link:hover {
-  background: #252525;
   color: #fff;
 }
 /* Pattern List */
@@ -109,6 +100,7 @@
   text-decoration: none;
   color: inherit;
   font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 .pl-pattern-headline > a:hover {
   color: #000;
@@ -150,7 +142,11 @@
 
 /* Main frame */
 .pl-main {
-  padding: 20px 40px 60px;
+  position: absolute;
+  left: 200px;
+  right: 0;
+  top: 0;
+  padding: 30px 20px 60px;
 }
 
 /* Error Page */
@@ -162,7 +158,7 @@
 /* Code View */
 .pl-codeview {
   display: block;
-  margin-top: 100px;
+  margin-bottom: 40px;
   padding: 20px;
   background: #efefef;
   overflow: auto;

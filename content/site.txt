@@ -2,7 +2,5 @@ Title: Patternlab
 ----
 CSS:
 
-- assets/css/app.css
 - assets/css/font-awesome.css
-- assets/css/text.css
-- assets/css/form.css
+- assets/css/mock.css

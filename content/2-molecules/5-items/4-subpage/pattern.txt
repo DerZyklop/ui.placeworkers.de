@@ -1,0 +1,3 @@
+Title: Subpage
+----
+Wrap: grey section

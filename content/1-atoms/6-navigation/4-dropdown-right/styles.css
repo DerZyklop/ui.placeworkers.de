@@ -1,0 +1,6 @@
+.dropdown-right {
+  right: 0;
+}
+.dropdown-right:after {
+  right: 1.5em;
+}

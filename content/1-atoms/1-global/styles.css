@@ -1,0 +1,63 @@
+/** Load the font **/
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+/** Reset **/
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** Clearfix **/
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** Text with ellipsis **/
+.cut {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/** Hidden elements **/
+.hidden {
+  display: none !important;
+}
+
+/** Shiv **/
+.shiv {
+  background: #fff;
+}
+.shiv:after {
+  position: absolute;
+  content: "";
+  width: 2em;
+  height: 100%;
+  top: 0;
+  background: -webkit-linear-gradient(left, rgba(255,255,255, 0), #fff);
+}
+.shiv-left:after {
+  left: -2em;
+}
+.shiv-right:after {
+  right: -2em;
+}
+.grey .shiv {
+  background: #efefef;
+}
+.grey .shiv:after {
+  background: -webkit-linear-gradient(left, rgba(239,239,239, 0), #efefef);
+}

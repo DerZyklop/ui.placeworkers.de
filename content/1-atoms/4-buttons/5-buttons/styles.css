@@ -1,0 +1,10 @@
+/* Form buttons */
+.buttons {
+  margin: .5em 0;
+}
+.buttons .btn-cancel {
+  float: left;
+}
+.buttons .btn-submit {
+  float: right;
+}

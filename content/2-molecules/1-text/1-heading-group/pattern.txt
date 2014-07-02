@@ -1,2 +1,3 @@
 Title: Heading Group
 ----
+Wrap: grey section

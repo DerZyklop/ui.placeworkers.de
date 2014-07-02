@@ -1,0 +1,7 @@
+.btn-negative {
+  border-color: #b3000a;
+  color: #b3000a;
+}
+.btn-negative:focus {
+  background: #b3000a;
+}

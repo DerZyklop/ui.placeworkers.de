@@ -1,0 +1,19 @@
+.content {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.content .form {
+  padding: 0 1.5em;
+}
+.content.with-sidebar-left {
+  left: 33.33%;
+}
+.content.with-sidebar-right {
+  right: 33.33%;
+}
+.content .hgroup {
+  margin-bottom: 1.5em;
+}

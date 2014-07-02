@@ -1,0 +1,12 @@
+.hgroup-single-line {
+  border: 0;
+  padding-bottom: 0;
+}
+.hgroup-single-line .hgroup-title {
+  margin-bottom: 0;
+}
+.hgroup-single-line .hgroup-options {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,1 @@
+<p><i class="icon icon-left fa fa-trash-o"></i> Text</p>

@@ -1,0 +1,11 @@
+/* Reset */
+fieldset {
+  border: 0;
+}
+
+/* A list of inputs */
+.input-list-item {
+  list-style: none;
+  margin-bottom: .5em;
+}
+

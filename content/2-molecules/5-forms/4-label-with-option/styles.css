@@ -1,0 +1,14 @@
+.label-option {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 1.75em;
+  font-weight: 400;
+  color: #777;
+}
+.label-option:hover {
+  color: #000;
+}
+.label-option .icon {
+  color: #000;
+}

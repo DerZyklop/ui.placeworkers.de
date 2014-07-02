@@ -1,0 +1,46 @@
+.breadcrumb {
+  position: relative;
+  background: #000;
+  height: 3em;
+  overflow: hidden;
+}
+.breadcrumb-list {
+  display: none;
+}
+@media screen and (min-width: 50em) {
+  .breadcrumb .nav-icon {
+    display: none;
+  }
+  .breadcrumb-list {
+    display: block;
+  }
+}
+.breadcrumb-list > li > a {
+  position: relative;
+  padding: 1em 1.5em;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 400;
+}
+.breadcrumb-list > li > a:hover {
+  color: #999;
+}
+.breadcrumb-list > li > a:after,
+.breadcrumb-list > li > a:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  height: 1.6em;
+  width: 1px;
+  background: #555;
+}
+.breadcrumb-list > li > a:after {
+  top: 0;
+  background: -webkit-linear-gradient(bottom, #555, #555 50%, #000);
+  transform: rotate(-33.75deg);
+}
+.breadcrumb-list > li > a:before {
+  bottom: 0;
+  background: -webkit-linear-gradient(top, #555, #555 50%, #000);
+  transform: rotate(33.75deg);
+}

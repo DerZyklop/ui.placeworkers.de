@@ -1,0 +1,11 @@
+.btn-with-icon {
+  color: #777;
+  text-align: left;
+  white-space: nowrap;
+}
+.btn-with-icon:hover {
+  color: #000;
+}
+.btn-with-icon .icon {
+  color: #000;
+}

@@ -1,0 +1,1 @@
+<p><button class="btn btn-rounded btn-negative">Negative Button</button></p>

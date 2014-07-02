@@ -1,0 +1,11 @@
+.subpages-grid .grid-item {
+  width: 50%;
+}
+.subpages-grid h3 {
+  margin-bottom: 1em;
+  font-weight: 400;
+  color: #777;
+}
+.subpages-grid .item-info {
+  cursor: move;
+}

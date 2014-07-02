@@ -1,0 +1,8 @@
+.dropzone {
+  position: relative;
+  border: 1px dashed #ddd;
+  border-radius: .2em;
+}
+.grey .dropzone {
+  border-color: #bbb;
+}

@@ -1,0 +1,10 @@
+.buttons-centered {
+  text-align: center;
+}
+.buttons-centered .btn {
+  margin: 0 .5em;
+}
+.buttons-centered .btn-cancel,
+.buttons-centered .btn-submit {
+  float: none;
+}

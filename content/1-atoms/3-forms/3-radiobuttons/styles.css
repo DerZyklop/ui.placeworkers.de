@@ -1,0 +1,7 @@
+.input-with-radio {
+  overflow: hidden;
+}
+.input-with-radio .radio {
+  float: left;
+  margin: .25em 1em .25em .25em;
+}

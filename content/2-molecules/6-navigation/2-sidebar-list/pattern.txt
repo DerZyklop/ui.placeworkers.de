@@ -1,2 +1,3 @@
 Title: Sidebar List
 ----
+Wrap: sidebar section

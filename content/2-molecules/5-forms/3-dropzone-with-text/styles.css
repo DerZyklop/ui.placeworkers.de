@@ -1,0 +1,8 @@
+.dropzone-text {
+  text-align: center;
+  line-height: 1.5em;
+}
+.dropzone-text .marginalia {
+  font-size: .9em;
+  font-style: italic;
+}

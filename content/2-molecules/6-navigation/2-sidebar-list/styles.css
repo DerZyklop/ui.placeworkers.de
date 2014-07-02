@@ -1,0 +1,9 @@
+.sidebar-list {
+  margin-bottom: 1.5em;
+}
+.sidebar-list > li > a {
+  padding: .25em 0;
+}
+.sidebar-list .marginalia {
+  float: right;
+}

@@ -1,0 +1,7 @@
+.btn-positive {
+  border-color: #8dae28;
+  color: #8dae28;
+}
+.btn-positive:focus {
+  background: #8dae28;
+}

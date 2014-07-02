@@ -1,0 +1,14 @@
+* {
+  font-size: 100%;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+.light {
+  font-weight: 300;
+}
+
+b,
+strong,
+.strong {
+  font-weight: 600;
+}

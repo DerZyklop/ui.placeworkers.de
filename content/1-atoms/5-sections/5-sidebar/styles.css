@@ -1,0 +1,21 @@
+.sidebar {
+  position: relative;
+  background: #fff;
+  width: 33.33%;
+}
+.sidebar:after {
+  position: fixed;
+  content: "";
+  background: #fff;
+  top: 3em;
+  bottom: 0;
+  width: 33.33%;
+  height: 100%;
+  z-index: -1;
+}
+.sidebar-left {
+  left: 0;
+}
+.sidebar-left:after {
+  left: 0;
+}

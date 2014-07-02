@@ -1,0 +1,10 @@
+.dropdown-list > li > a {
+  padding: .75em 1.5em;
+  border-bottom: 1px solid #efefef;
+}
+.dropdown-list > li > a:hover {
+  color: #777;
+}
+.dropdown-list > li > a:hover i {
+  color: #000;
+}

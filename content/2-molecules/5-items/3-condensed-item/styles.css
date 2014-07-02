@@ -1,0 +1,22 @@
+.item-condensed .item-info {
+  padding: .75em .5em;
+  height: auto;
+}
+.item-condensed .item-options .btn {
+  padding: 1em;
+}
+@media screen and (min-width: 50em) {
+  .item-condensed .item-info {
+    height: auto;
+  }
+  .item-condensed .item-options .btn {
+    padding: 1.05em 1.5em;
+  }
+  .item-condensed .item-options a span {
+    display: none;
+  }
+  .item-condensed .item-options i {
+    padding-right: 0;
+  }
+
+}

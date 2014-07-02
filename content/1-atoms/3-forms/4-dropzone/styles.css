@@ -1,0 +1,11 @@
+.dropzone.dropzone-input {
+  border-width: 2px;
+  transition: border-color .3s;
+  cursor: pointer;
+}
+.dropzone.dropzone-input:hover {
+  border-color: #bbb;
+}
+.grey .dropzone.dropzone-input:hover {
+  border-color: #aaa;
+}
