@@ -1,19 +1,11 @@
 <?php snippet('header') ?>
 
-<?php foreach($pages->find('atoms', 'molecules', 'organisms')->children()->children() as $pattern): ?>
-
-<div class="pl-pattern">
-
-  <h2 class="pl-pattern-headline">
-    <a href="<?php echo $pattern->url() ?>"><?php echo $pattern->title() ?></a>
-  </h2>
-
-  <div class="pl-pattern-body">
-    <?php snippet('pattern', array('pattern' => $pattern)) ?>
-  </div>
-
-</div>
-
-<?php endforeach ?>
+<?php if(param('format') == 'iframe'): ?>
+  <?php foreach($pages->find('atoms', 'molecules', 'organisms')->children()->children() as $pattern): ?>
+  <?php snippet('listitem', array('pattern' => $pattern)) ?>
+  <?php endforeach ?>
+<?php else: ?>
+  <iframe class="pl-iframe" src="<?php echo $page->url() ?>/format:iframe"></iframe>
+<?php endif ?>
 
 <?php snippet('footer') ?>
