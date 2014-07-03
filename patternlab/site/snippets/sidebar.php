@@ -18,20 +18,6 @@
     </li>
     <?php endforeach ?>
 
-    <li class="pl-menu-item">
-      <span class="pl-menu-link">Downloads</span>
-
-      <ul class="pl-submenu">
-        <li class="pl-submenu-item">
-          <a class="pl-submenu-link" href="<?php echo url('styles.css') ?>">styles.css</a>
-        </li>
-        <li class="pl-submenu-item">
-          <a class="pl-submenu-link" href="<?php echo url('styles.min.css') ?>">styles.min.css</a>
-        </li>
-      </ul>
-
-    </li>
-
   </ul>
 
 </aside>
