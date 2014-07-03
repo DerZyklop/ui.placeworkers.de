@@ -195,9 +195,11 @@
   margin-bottom: 1.5em;
   max-width: 30em;
 }
-.pl-content p a {
+.pl-content p a,
+.pl-content ul a {
   border-bottom: 1px solid #ddd;
 }
-.pl-content p a:hover {
+.pl-content p a:hover,
+.pl-content ul a:hover {
   border-bottom: 1px solid #000;
 }
