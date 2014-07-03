@@ -182,3 +182,22 @@
   width: 100%;
   border: 0;
 }
+
+
+.pl-content {
+  padding: 30px 20px 100px;
+}
+.pl-content ul {
+  margin-left: 1em;
+  margin-bottom: 1.5em;
+}
+.pl-content p {
+  margin-bottom: 1.5em;
+  max-width: 30em;
+}
+.pl-content p a {
+  border-bottom: 1px solid #ddd;
+}
+.pl-content p a:hover {
+  border-bottom: 1px solid #000;
+}
