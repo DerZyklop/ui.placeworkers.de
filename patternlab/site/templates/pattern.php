@@ -1,42 +1,36 @@
 <?php snippet('header') ?>
 
-<div class="pl-pattern">
+<?php if(param('format') == 'iframe'): ?>
 
-  <h2 class="pl-pattern-headline">
-    <a href="<?php echo $page->url() ?>"><?php echo $page->title() ?></a>
+  <?php snippet('listitem', array('pattern' => $page)) ?>
+
+  <h2 id="html" class="pl-pattern-headline">
+    <a href="#html">HTML</a>
   </h2>
+  <pre class="pl-codeview"><code><?php
 
-  <div class="pl-pattern-body">
-    <div class="<?php echo $page->wrap() ?>">
-      <?php snippet('pattern', array('pattern' => $page)) ?>
-    </div>
-  </div>
+  $html = snippet('pattern', array('pattern' => $page), true);
+  $html = prettify($html);
 
-</div>
+  echo htmlspecialchars(trim($html));
 
-<h2 id="html" class="pl-pattern-headline">
-  <a href="#html">HTML</a>
-</h2>
-<pre class="pl-codeview"><code><?php
+  ?></code></pre>
 
-$html = snippet('pattern', array('pattern' => $page), true);
-$html = prettify($html);
+  <?php if($css = $page->files()->find('styles.css')): ?>
 
-echo htmlspecialchars(trim($html));
+  <h2 id="css" class="pl-pattern-headline">
+    <a href="#css">CSS</a>
+  </h2>
+  <pre class="pl-codeview"><code><?php
 
-?></code></pre>
+  echo htmlspecialchars(trim(f::read($css->root())));
 
-<?php if($css = $page->files()->find('styles.css')): ?>
+  ?></code></pre>
 
-<h2 id="css" class="pl-pattern-headline">
-  <a href="#css">CSS</a>
-</h2>
-<pre class="pl-codeview"><code><?php
+  <?php endif ?>
 
-echo htmlspecialchars(trim(f::read($css->root())));
-
-?></code></pre>
-
+<?php else: ?>
+<iframe class="pl-iframe" src="<?php echo $page->url() ?>/format:iframe"></iframe>
 <?php endif ?>
 
 <?php snippet('footer') ?>

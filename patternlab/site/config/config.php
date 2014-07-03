@@ -1,36 +1,54 @@
 <?php
 
-c::set('routes', array(
-  array(
-    'pattern' => 'styles.css',
-    'action'  => function() {
+function compress($buffer) {
+  /* remove comments */
+  $buffer = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $buffer);
+  /* remove tabs, spaces, newlines, etc. */
+  $buffer = str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', $buffer);
+  return $buffer;
+}
 
-      $css = '';
+function styles() {
 
-      foreach(site()->pages()->visible() as $item) {
+  $css = '';
 
-        foreach($item->children() as $subitem) {
+  foreach(site()->pages()->visible() as $item) {
 
-          if($file = $subitem->file('styles.css')) {
-            $css .= PHP_EOL . $file->read();
-          }
+    foreach($item->children() as $subitem) {
 
-          foreach($subitem->children() as $subsubitem) {
+      if($file = $subitem->file('styles.css')) {
+        $css .= PHP_EOL . $file->read();
+      }
 
-            if($file = $subsubitem->files()->find('styles.css')) {
-              $css .= PHP_EOL . $file->read();
-            }
+      foreach($subitem->children() as $subsubitem) {
 
-          }
-
+        if($file = $subsubitem->files()->find('styles.css')) {
+          $css .= PHP_EOL . $file->read();
         }
 
       }
 
-      header::type('css');
-      die(trim($css));
-
     }
 
+  }
+
+  return $css;
+
+}
+
+c::set('routes', array(
+  array(
+    'pattern' => 'styles.css',
+    'action'  => function() {
+      header::type('css');
+      die(trim(styles()));
+    }
+  ),
+  array(
+    'pattern' => 'styles.min.css',
+    'action'  => function() {
+      header::type('css');
+      die(trim(compress(styles())));
+    }
   )
 ));

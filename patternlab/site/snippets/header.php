@@ -19,6 +19,9 @@
 </head>
   <body class="pl">
 
+    <?php if(param('format') != 'iframe'): ?>
     <?php snippet('sidebar') ?>
-
     <main class="pl-main">
+    <?php else: ?>
+    <main class="pl-main-iframe">
+    <?php endif ?>

@@ -9,4 +9,5 @@
 .label abbr {
   color: #8dae28;
   padding-left: .25em;
+  border: 0;
 }

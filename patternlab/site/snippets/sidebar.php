@@ -5,7 +5,7 @@
     <li class="pl-menu-item<?php e($item->isActive(), ' pl-menu-item-active') ?>">
       <a class="pl-menu-link" href="<?php echo $item->url() ?>"><?php echo $item->title() ?></a>
 
-      <?php if($item->hasVisibleChildren()): ?>
+      <?php if($item->hasVisibleChildren() and $item->isOpen()): ?>
       <ul class="pl-submenu">
         <?php foreach($item->children()->visible() as $subitem): ?>
         <li class="pl-submenu-item<?php e($subitem->isOpen(), ' pl-submenu-item-active') ?>">
@@ -24,6 +24,9 @@
       <ul class="pl-submenu">
         <li class="pl-submenu-item">
           <a class="pl-submenu-link" href="<?php echo url('styles.css') ?>">styles.css</a>
+        </li>
+        <li class="pl-submenu-item">
+          <a class="pl-submenu-link" href="<?php echo url('styles.min.css') ?>">styles.min.css</a>
         </li>
       </ul>
 
