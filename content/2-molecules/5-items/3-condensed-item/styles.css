@@ -10,7 +10,7 @@
     height: auto;
   }
   .item-condensed .item-options .btn {
-    padding: 1.05em 1.5em;
+    padding: .75em 1.25em;
   }
   .item-condensed .item-options a span {
     display: none;

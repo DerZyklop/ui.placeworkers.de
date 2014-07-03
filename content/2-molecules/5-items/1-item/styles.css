@@ -16,11 +16,12 @@
   padding: 0 .5em;
   display: block;
   margin-bottom: .25em;
+  white-space: nowrap;
 }
 .item-meta {
   padding: 0 .5em;
-  font-size: .9em;
   display: block;
+  white-space: nowrap;
 }
 .item-options {
   background: #fff;
@@ -54,8 +55,6 @@
   }
   .item-meta {
     float: left;
-    font-size: .9em;
-    line-height: 1.25em;
   }
   .item-options {
     position: absolute;
@@ -65,9 +64,6 @@
   }
   .item-options li {
     width: auto;
-  }
-  .item-options .btn {
-    padding: 1.2em 1.5em;
   }
 
 }

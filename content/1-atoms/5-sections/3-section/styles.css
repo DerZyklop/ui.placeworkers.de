@@ -1,3 +1,6 @@
 .section {
   padding: 1.5em;
 }
+.white {
+  background: #fff;
+}

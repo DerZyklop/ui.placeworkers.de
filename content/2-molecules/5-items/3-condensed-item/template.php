@@ -1,8 +1,8 @@
 <div class="item item-condensed">
   <div class="item-content">
     <div class="item-info">
-      <strong class="item-title cut">Item title</strong>
-      <small class="item-meta cut marginalia">Very long item details with lots of content</small>
+      <strong class="item-title">Item title</strong>
+      <small class="item-meta marginalia">Very long item details with lots of content</small>
     </div>
   </div>
   <nav class="item-options">

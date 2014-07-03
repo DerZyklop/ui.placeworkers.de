@@ -3,7 +3,7 @@
   top: 3em;
   left: 0;
   right: 0;
-  bottom: 0;
+  padding-bottom: 9em;
 }
 .content .form {
   padding: 0 1.5em;

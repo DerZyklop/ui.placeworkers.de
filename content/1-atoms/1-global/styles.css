@@ -23,6 +23,10 @@ summary {
   display: block;
 }
 
+abbr {
+  border: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -35,7 +39,7 @@ img {
 
 .cut {
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: hidden;
   text-overflow: ellipsis;
 }
 

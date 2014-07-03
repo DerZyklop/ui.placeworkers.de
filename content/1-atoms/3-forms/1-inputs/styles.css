@@ -12,3 +12,9 @@
   outline: 0;
   border-color: #8dae28;
 }
+textarea.input {
+  resize: none;
+}
+textarea.over {
+  border-color: #000;
+}

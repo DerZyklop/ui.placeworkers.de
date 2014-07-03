@@ -1,7 +1,7 @@
 <div class="item item-condensed">
   <div class="item-content">
     <div class="item-info">
-      <a href="#" class="item-title cut">Item title</a>
+      <a href="#" class="item-title">Item title</a>
     </div>
   </div>
   <nav class="item-options item-options-three">

@@ -1,0 +1,24 @@
+.field-with-buttons .input {
+  padding-bottom: 1.5em !important;
+  min-height: 10em;
+}
+.field-buttons {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  border-top: 1px solid #efefef;
+  background: #fff;
+}
+.field-buttons li {
+  border-right: 1px solid #efefef;
+}
+.field-buttons .btn {
+  padding: .75em 1.5em .6em;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.field-buttons .btn:hover {
+  color: #000;
+}

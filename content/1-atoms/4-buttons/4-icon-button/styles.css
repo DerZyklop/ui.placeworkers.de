@@ -3,6 +3,7 @@
   text-align: left;
   white-space: nowrap;
 }
+.btn-with-icon:focus,
 .btn-with-icon:hover {
   color: #000;
 }

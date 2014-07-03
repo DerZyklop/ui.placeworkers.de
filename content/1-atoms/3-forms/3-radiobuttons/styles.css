@@ -1,7 +1,11 @@
 .input-with-radio {
   overflow: hidden;
 }
+.input-with-radio label {
+  cursor: pointer;
+}
 .input-with-radio .radio {
-  float: left;
-  margin: .25em 1em .25em .25em;
+  position: relative;
+  top: -1px;
+  margin: 0 1em 0 .25em;
 }
