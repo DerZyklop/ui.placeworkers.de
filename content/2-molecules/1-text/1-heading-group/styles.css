@@ -36,6 +36,9 @@
 .hgroup-options a {
   display: inline-block;
 }
+.hgroup-options a:hover {
+  color: #000;
+}
 .hgroup-option-left {
   float: left;
 }
