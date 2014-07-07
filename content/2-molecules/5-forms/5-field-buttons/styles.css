@@ -1,5 +1,4 @@
 .field-with-buttons .input {
-  padding-bottom: 1.5em !important;
   min-height: 10em;
 }
 .field-buttons {
@@ -9,6 +8,7 @@
   right: 2px;
   border-top: 1px solid #efefef;
   background: #fff;
+  display: none;
 }
 .field-buttons li {
   border-right: 1px solid #efefef;
@@ -21,4 +21,13 @@
 }
 .field-buttons .btn:hover {
   color: #000;
+}
+
+@media screen and (min-width: 30em) {
+  .field-with-buttons .input {
+    padding-bottom: 1.5em !important;
+  }
+  .field-buttons {
+    display: block;
+  }
 }

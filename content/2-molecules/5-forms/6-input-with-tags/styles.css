@@ -1,3 +1,25 @@
 .input-with-tags {
   padding: 3px;
 }
+.field-with-icon .input-with-tags {
+  padding-right: 3.25em;
+}
+.tag-input {
+  margin: 3px;
+  vertical-align: top;
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border: 0;
+  padding: .25em;
+  text-transform: lowercase;
+  width: auto;
+  outline: 0;
+}
+@media screen and (min-width: 30em) {
+  .tag-input {
+    display: inline-block;
+  }
+}

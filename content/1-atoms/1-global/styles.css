@@ -47,16 +47,12 @@ img {
   display: none !important;
 }
 
-.shiv {
-  background: #fff;
-}
 .shiv:after {
   position: absolute;
   content: "";
   width: 2em;
   height: 100%;
   top: 0;
-  background: -webkit-linear-gradient(left, rgba(255,255,255, 0), #fff);
 }
 .shiv-left:after {
   left: -2em;
@@ -64,9 +60,21 @@ img {
 .shiv-right:after {
   right: -2em;
 }
-.grey .shiv {
+.shiv-white {
+  background: #fff;
+}
+.shiv-white:after {
+  background: -webkit-linear-gradient(left, rgba(255,255,255, 0), #fff);
+  background: -moz-linear-gradient(left, rgba(255,255,255, 0), #fff);
+  background: -ms-linear-gradient(left, rgba(255,255,255, 0), #fff);
+  background: linear-gradient(left, rgba(255,255,255, 0), #fff);
+}
+.shiv-grey {
   background: #efefef;
 }
-.grey .shiv:after {
+.shiv-grey:after {
   background: -webkit-linear-gradient(left, rgba(239,239,239, 0), #efefef);
+  background: -moz-linear-gradient(left, rgba(239,239,239, 0), #efefef);
+  background: -ms-linear-gradient(left, rgba(239,239,239, 0), #efefef);
+  background: linear-gradient(left, rgba(239,239,239, 0), #efefef);
 }

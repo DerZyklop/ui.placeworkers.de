@@ -1,14 +1,17 @@
 .tag {
   margin: 3px;
   vertical-align: top;
-  display: inline-block;
-}
-.tag {
+  display: block;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   background: #000;
   border-radius: 3px;
+}
+@media screen and (min-width: 30em) {
+  .tag {
+    display: inline-block;
+  }
 }
 .tag button {
   border: 0;
@@ -21,8 +24,12 @@
   padding: 0;
 }
 .tag .tag-label {
+  display: block;
+  width: 100%;
   z-index: 1;
   padding: .25em 3.5em .25em 1em;
+  text-align: left;
+  white-space: nowrap;
 }
 .tag .tag-label:focus,
 .tag-is-focused .tag-label {
@@ -33,7 +40,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: .25em 1em;
+  line-height: 1em;
+  padding: .4em 1em;
   font-style: normal;
   z-index: 1;
   color: rgba(255,255,255, .7);
@@ -43,3 +51,5 @@
 .tag .tag-x:focus {
   color: #fff;
 }
+
+

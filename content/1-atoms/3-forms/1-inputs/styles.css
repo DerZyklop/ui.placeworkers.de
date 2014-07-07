@@ -7,6 +7,11 @@
   background: #fff;
   width: 100%;
   display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 .input:focus {
   outline: 0;
