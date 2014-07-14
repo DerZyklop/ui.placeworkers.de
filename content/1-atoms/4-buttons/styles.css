@@ -6,6 +6,10 @@
   cursor: pointer;
   outline: none;
   vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 }
 .btn::-moz-focus-inner {
   border: 0;

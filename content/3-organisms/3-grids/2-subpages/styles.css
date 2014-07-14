@@ -1,5 +1,5 @@
 .subpages-grid .grid-item {
-  width: 50%;
+  margin-bottom: 1.5em;
 }
 .subpages-grid h3 {
   margin-bottom: 1em;
@@ -8,4 +8,9 @@
 }
 .subpages-grid .item-info {
   cursor: move;
+}
+@media screen and (min-width: 50em) {
+  .subpages-grid .grid-item {
+    width: 50%;
+  }
 }

@@ -1,36 +1,40 @@
-.modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-.modal-blocker {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0, .2);
-  z-index: 0;
-}
 .modal-content {
   position: relative;
   background: #fff;
-  box-shadow: rgba(0,0,0, .1) 0 2px 10px;
-  border-radius: 3px;
   overflow: hidden;
-  max-width: 22em;
-  min-width: 22em;
-  margin: 0 auto;
   z-index: 2;
+  margin: 1.5em;
 }
 .modal-content .form {
   padding: 1.5em;
 }
-.modal .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+
+
+@media screen and (min-width: 50em) {
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, .2);
+  }
+  .modal-content {
+    position: absolute;
+    width: 22em;
+    top: 50%;
+    left: 50%;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0, .1) 0 2px 10px;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
 }

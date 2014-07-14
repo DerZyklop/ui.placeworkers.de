@@ -1,3 +1,0 @@
-Title: Sidebar right
-----
-Wrap: grey mock-container

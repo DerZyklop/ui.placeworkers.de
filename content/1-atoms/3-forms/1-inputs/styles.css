@@ -23,3 +23,7 @@ textarea.input {
 textarea.over {
   border-color: #000;
 }
+.input:required,
+.input:invalid {
+  box-shadow: none;
+}

@@ -1,40 +1,89 @@
 .breadcrumb {
   position: relative;
   background: #000;
-  height: 3em;
-  overflow: hidden;
 }
 .breadcrumb-list {
+  height: 3em;
+  overflow: hidden;
   display: none;
 }
-@media screen and (min-width: 50em) {
-  .breadcrumb .nav-icon {
-    display: none;
-  }
-  .breadcrumb-list {
-    display: block;
-  }
+.breadcrumb-list:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 2em;
+  pointer-events: none;
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0), #000);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), #000);
+  background: -ms-linear-gradient(left, rgba(0,0,0,0), #000);
+  background: linear-gradient(left, rgba(0,0,0,0), #000);
 }
-.breadcrumb-list > li > a {
+.breadcrumb-list li:last-child .breadcrumb-label {
+  max-width: none;
+}
+.breadcrumb-link {
   position: relative;
-  padding: 1em 1.5em;
   line-height: 1em;
+  padding-left: 1.25em;
   color: #fff;
   font-weight: 400;
 }
-.breadcrumb-list > li > a:hover {
+.breadcrumb-label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 6em;
+  padding: 1em .75em 1em 0;
+}
+
+@media screen and (min-width: 50em) {
+  .breadcrumb-dropdown,
+  .breadcrumb .nav-icon {
+    display: none;
+  }
+  .breadcrumb ul {
+    display: block;
+  }
+}
+@media screen and (min-width: 60em) {
+  .breadcrumb-label {
+    max-width: 9em;
+  }
+}
+@media screen and (min-width: 70em) {
+  .breadcrumb-label {
+    max-width: 12em;
+  }
+}
+
+.breadcrumb-label:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: .75em;
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0), #000);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), #000);
+  background: -ms-linear-gradient(left, rgba(0,0,0,0), #000);
+  background: linear-gradient(left, rgba(0,0,0,0), #000);
+}
+.breadcrumb-link:hover {
   color: #999;
 }
-.breadcrumb-list > li > a:after,
-.breadcrumb-list > li > a:before {
+.breadcrumb-link:after,
+.breadcrumb-link:before {
   position: absolute;
   content: "";
   right: 0;
   height: 1.6em;
   width: 1px;
   background: #555;
+  z-index: 1;
 }
-.breadcrumb-list > li > a:after {
+.breadcrumb-link:after {
   top: 0;
   background: -webkit-linear-gradient(bottom, #555, #555 50%, #000);
   background: -moz-linear-gradient(bottom, #555, #555 50%, #000);
@@ -45,7 +94,7 @@
   -ms-transform: rotate(-33.75deg);
   transform: rotate(-33.75deg);
 }
-.breadcrumb-list > li > a:before {
+.breadcrumb-link:before {
   bottom: 0;
   background: -webkit-linear-gradient(top, #555, #555 50%, #000);
   background: -moz-linear-gradient(top, #555, #555 50%, #000);
@@ -56,3 +105,4 @@
   -ms-transform: rotate(33.75deg);
   transform: rotate(33.75deg);
 }
+

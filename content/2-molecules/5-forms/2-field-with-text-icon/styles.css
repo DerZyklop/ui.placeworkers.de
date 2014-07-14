@@ -1,0 +1,8 @@
+.field-icon span {
+  display: block;
+  padding: 0;
+  line-height: 3em;
+  font-size: .8em;
+  text-align: center;
+  color: #777;
+}

@@ -4,3 +4,11 @@ CSS:
 
 - assets/css/font-awesome.css
 - assets/css/mock.css
+
+----
+
+JS:
+
+- assets/js/jquery.js
+- assets/js/jquery.breadcrumb.js
+- assets/js/jquery.sidebar.js

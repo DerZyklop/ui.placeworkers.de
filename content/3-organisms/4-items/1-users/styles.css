@@ -1,5 +1,5 @@
 .items .item {
-  margin-bottom: .5em;
+  margin-bottom: 1.5em;
 }
 .items .item:last-child {
   margin-bottom: 0;
