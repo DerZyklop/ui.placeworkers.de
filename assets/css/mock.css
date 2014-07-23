@@ -1,4 +1,4 @@
 .mock-container {
-  height: 20em;
+  min-height: 40em;
   position: relative;
 }

@@ -1,3 +1,0 @@
-Title: Content
-----
-Wrap: grey mock-container
