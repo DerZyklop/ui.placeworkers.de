@@ -1,0 +1,29 @@
+.input {
+  padding: .5em;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 400;
+  border: 2px solid #ddd;
+  background: #fff;
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+.input:focus {
+  outline: 0;
+  border-color: #8dae28;
+}
+textarea.input {
+  resize: none;
+}
+textarea.over {
+  border-color: #000;
+}
+.input:required,
+.input:invalid {
+  box-shadow: none;
+}
