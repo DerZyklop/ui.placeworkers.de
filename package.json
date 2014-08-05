@@ -40,9 +40,9 @@
       "css": "assets/pre_css/"
     },
     "build": {
-      "dir": "assets/",
-      "js": "assets/js/",
-      "css": "assets/css/"
+      "dir": "",
+      "js": "js/",
+      "css": ""
     }
   },
   "readme": "# boilerplate.pxwrk.de\n\n## Install\n\nNavigate to your project. **Create a temporary package.json via `npm init`**.\n\n```\nnpm install DerZyklop/boilerplate.pxwrk.de\nsh node_modules/boilerplate.pxwrk.de/init\nnpm install\ngrunt\n```\n\n## Wat is it?\n\nThis is my personal project-boilerplate.\n\nI wouldn't recommend to use it as it is for your project. It's not documented.\nIt's just a collection of files, that i use in almost every project.\n",
