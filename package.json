@@ -40,7 +40,7 @@
       "css": "assets/pre_css/"
     },
     "build": {
-      "dir": "",
+      "dir": "build/",
       "js": "js/",
       "css": ""
     }
