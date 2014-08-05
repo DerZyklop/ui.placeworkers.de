@@ -8,6 +8,7 @@
     "email": "mail@der-zyklop.com"
   },
   "devDependencies": {
+    "boilerplate.pxwrk.de": "git@github.com:DerZyklop/boilerplate.pxwrk.de.git",
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "0.6.x",
     "grunt-concurrent": "~0.5.0",
@@ -51,7 +52,7 @@
   "dist": {
     "shasum": "f6cdde0bf657aa4e34bef64f9f92de8c8c7b9d0c"
   },
-  "_resolved": "git://github.com/DerZyklop/boilerplate.pxwrk.de#aa79f41a9832246f07c0a17aa4113af50cee61b3",
-  "_from": "git://github.com/DerZyklop/boilerplate.pxwrk.de",
+  "_resolved": "git@github.com:DerZyklop/boilerplate.pxwrk.de#aa79f41a9832246f07c0a17aa4113af50cee61b3",
+  "_from": "git@github.com:DerZyklop/boilerplate.pxwrk.de",
   "_fromGithub": true
 }
