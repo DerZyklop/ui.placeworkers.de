@@ -37,7 +37,7 @@
       "dir": "assets/",
       "coffee": "assets/coffee/",
       "js": "assets/pre_js/",
-      "sass": "assets/sass/",
+      "sass": "content/",
       "css": "assets/pre_css/"
     },
     "build": {
