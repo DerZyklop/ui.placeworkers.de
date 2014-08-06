@@ -1,1 +1,1 @@
-<input class="search-input" type="search" placeholder="Your search…">
+<input type="search" placeholder="Your search…">

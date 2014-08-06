@@ -26,6 +26,8 @@ module.exports = (grunt) ->
 
     # concat
     concat:
+      options:
+        banner: '<%= banner %>'
       script:
         src: [
           '<%= pkg.paths.src.js %>*.js'
@@ -87,8 +89,6 @@ module.exports = (grunt) ->
 
     # cssmin
     cssmin:
-      options:
-        banner: '<%= banner %>'
       all:
         files: [
           expand: true

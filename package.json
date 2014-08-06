@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate.pxwrk.de",
+  "name": "ui-pattern",
   "description": "Project by @DerZyklop",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "author": {
     "name": "Nils Neumann",
     "email": "mail@der-zyklop.com"
