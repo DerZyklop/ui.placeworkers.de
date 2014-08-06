@@ -1,0 +1,23 @@
+/* Inputs [BEGIN] */
+
+input,
+textarea
+  display: block
+  width: 100%
+  border:
+    width: $border-width
+    style: $border-style
+    color: $tertiary + #444
+  background: $quadrary
+  border-radius: $radius
+  padding: 0.3em 2%
+  font-size: 1em
+  line-height: 1.5em
+  transition: 0.2s
+  &:focus
+    border-color: $tertiary
+
+textarea
+  resize: vertical
+
+/* Inputs [END] */

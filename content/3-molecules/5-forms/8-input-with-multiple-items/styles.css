@@ -1,6 +1,0 @@
-.input-with-items .item {
-  border-bottom: 1px solid #efefef;
-}
-.input-with-items .item:last-child {
-  border-bottom: 0;
-}

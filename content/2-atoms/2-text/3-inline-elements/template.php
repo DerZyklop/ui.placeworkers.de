@@ -33,9 +33,5 @@
 
   <p>The <mark>mark element</mark> indicates a highlight</p>
 
-  <p><code>This is what inline code looks like.</code></p>
-
-  <p><samp>This is sample output from a computer program</samp></p>
-
   <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
 </div>

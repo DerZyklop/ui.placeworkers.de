@@ -1,3 +1,0 @@
-Title: Condensed Item with image
-----
-Wrap: grey section

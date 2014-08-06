@@ -1,0 +1,33 @@
+/* Button [BEGIN] */
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]
+  display: block
+  box-sizing: border-box
+  width: 100%
+  padding: 0.5em 1em
+  cursor: pointer
+  color: $quadrary
+  text:
+    align: center
+    decoration: none
+  background: $secondary
+  border: none
+  font-size: 1em
+  font-family: $font-std
+  border-radius: $radius
+  transition: 0.3s
+  &:hover
+    text-decoration: none
+    color: $quadrary
+    background: $secondary - #222
+  a
+    text-decoration: none
+  &:disabled
+    background: $border-color + #111
+    cursor: default
+
+/* Button [END] */

@@ -1,8 +1,0 @@
-.input-is-readonly {
-  background: #efefef;
-  border-color: #ddd;
-  color: #777;
-}
-.input-is-readonly:focus {
-  border-color: #ddd;
-}
