@@ -1,9 +1,9 @@
 [submodule "patternlab"]
-	path = patternlab
-	url = https://github.com/getkirby/patternlab.git
+  path = patternlab
+  url = https://github.com/DerZyklop/patternlab.git
 [submodule "assets/sass/sass-boilerplate"]
-	path = assets/sass/sass-boilerplate
-	url = https://github.com/DerZyklop/sass-boilerplate
+  path = assets/sass/sass-boilerplate
+  url = https://github.com/DerZyklop/sass-boilerplate
 [submodule "assets/sass"]
-	path = assets/sass
-	url = git@github.com:DerZyklop/sass-boilerplate.git
+  path = assets/sass
+  url = git@github.com:DerZyklop/sass-boilerplate.git
