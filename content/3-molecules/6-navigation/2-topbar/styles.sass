@@ -1,0 +1,184 @@
+.logo
+  float: left
+  padding: 11px 0
+  margin: 0
+  a
+    display: block
+  img
+    border: none
+    margin: 0 30px
+@media screen and (max-width: $breakpoint)
+  .logo
+    float: none
+    img
+      margin: 0 auto
+
+.header
+  border-bottom:
+    color: $border-color
+    style: $border-style
+    width: $border-width
+@media screen and (min-width: $breakpoint)
+  .header
+    position: absolute
+    margin-left: 60px
+    margin-right: 60px
+    top: 0
+    left: 0
+    right: 0
+
+@media screen and (max-width: $breakpoint)
+  .header
+    z-index: 0
+    border-bottom: none
+    .right
+      float: none
+      border-top: none
+    .top-bar
+      background-image: linear-gradient(#ffffff, #f6f6f6)
+      border-bottom:
+        color: $border-color
+        style: $border-style
+        width: $border-width
+    .top-bar
+      z-index: 20
+      position: relative
+      .menu-btn
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        width: 20%
+        border-right: 1px solid $border-color
+        padding: 20px 0
+        background: #fff
+        .menu-icon
+          margin: 0 auto
+          width: 34px
+          max-width: 100%
+          span
+            display: block
+            background: $tertiary
+            //background: $quadrary
+            height: 4px
+            margin: 6px 0
+
+.top-bar
+  background-image: linear-gradient(#ffffff, #f6f6f6)
+@media screen and (max-width: $breakpoint)
+  .top-bar
+    z-index: 10
+    transition: left 1s
+    width: 100%
+
+.nav-wrap
+  float: left
+  > ul > li
+    float: left
+  ul.nav > li > a span
+    display: none
+
+@media screen and (max-width: $breakpoint)
+  .nav-wrap
+    display: block
+    overflow-x: scroll
+    padding-bottom: 8.4em
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    li a
+      font-size: 1.2em
+      color: #fff
+      line-height: 4.2em
+      padding-left: 1em
+      &:hover
+        background: #eee !important
+        color: #222
+    ul.nav > li > a
+      background: #444
+      border-bottom: 1px solid #555
+@media screen and (min-width: $breakpoint)
+  .nav-wrap
+    ul li
+      padding: 0
+    ul.nav
+      li.language-nav
+        min-width: 60px
+        background: none
+      > li
+        min-width: 128px
+        border-left:
+          color: $border-color
+          style: $border-style
+          width: $border-width
+        text-align: center
+        &:hover,
+        &.active
+          background: #b8d944
+          > a
+            color: #fff
+        > a
+          height: 80px
+          padding-top: 8px
+          color: #718e10
+          line-height: 1.8em
+          font-family: $font-highlight-regular
+          span
+            display: block
+        position: relative
+        &:hover .subnav-wrap
+          display: block
+          ul li:hover > a
+            color: #fff
+
+@media screen and (max-width: $breakpoint)
+  .nav-wrap
+    ul
+      li
+        float: none
+
+  #menu:target
+    .width-wrap
+      overflow: hidden
+    #main,
+    .top-bar
+      left: 80%
+    .top-bar
+      top: 0
+    .link-overlay
+      background: rgba(0,0,0,0.5)
+      height: 100%
+
+
+.overlay
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(0,0,0,0.5)
+  padding: 2em
+  z-index: 20
+  cursor: pointer
+  .close
+    float: right
+    line-height: 2em
+    margin: 0.4em 0
+    background-image: url('../img/icon/x-mark.png')
+    height: 30px
+    width: 30px
+    color: transparent
+    cursor: pointer
+  .inner
+    max-width: 400px
+    margin: 0 auto
+    padding: 2em
+    background: $quadrary
+    cursor: default
+  .errors
+    border: 4px solid $primary
+    border-radius: $radius
+    padding: 1em
+    font-weight: bold

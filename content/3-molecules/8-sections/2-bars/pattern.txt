@@ -1,3 +1,0 @@
-Title: Bars
-----
-Wrap: grey

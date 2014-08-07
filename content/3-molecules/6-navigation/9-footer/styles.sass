@@ -1,0 +1,37 @@
+.footer
+  margin: 0px auto
+  line-height: 60px - $border-width
+  > *
+    border:
+      color: $border-color
+      style: $border-style
+      width: $border-width $border-width 0
+    background-image: linear-gradient(#ffffff, #f6f6f6)
+  a
+    text-decoration: none
+    color: #888888
+    &:hover
+      text-decoration: underline
+      color: $primary
+
+@media screen and (max-width: $breakpoint)
+  .footer
+    position: absolute
+    margin-left: 0px
+    margin-right: 0px
+    bottom: 0
+    left: 0
+    width: 80%
+    z-index: 5
+
+@media screen and (min-width: $breakpoint)
+  .footer
+    margin-left: -60px
+    margin-right: -60px
+    padding: 0 60px
+    width: 100%
+    box-sizing: content-box
+    max-width: $width-wrap-width
+    background-image: url('../img/footer-l.png'), url('../img/footer-r.png')
+    background-position: bottom left, bottom right
+    background-repeat: no-repeat

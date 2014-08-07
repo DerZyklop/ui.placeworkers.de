@@ -1,3 +1,0 @@
-Title: Preview Icon
-----
-Wrap: topbar

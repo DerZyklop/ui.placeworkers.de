@@ -1,9 +1,125 @@
+// Deprecated vars
+$width-wrap-width: 1140px
+$page-wrap-padding-t-b: #{$space-t-b}
+$page-wrap-padding-l-r: #{$space-l-r}
+$font-highlight-regular: 'Monda-Regular', helvetica
+$color-highlight: #{$primary}
+$breakpoint: 1030px
+$width-wrap-background: #{$quadrary}
+$body-background: #{$quadrary}
+$font-color-highlight: #{$quadrary}
+
 /* Reset [BEGIN] */
 
-*
-  box-sizing: border-box
+body
+  background:
+    color: $quadrary
+    image: linear-gradient(#f4f4f4, #fff)
+    repeat: no-repeat
+  *
+    box-sizing: border-box
+@media screen and (max-width: $breakpoint)
+  body
+    background: #fff
+    background: #656565
+    font-size: 16px
+@media screen and (max-width: 500px)
+  body
+    font-size: 14px
+
+html, body
+  margin: 0
+  height: 100%
+
+video, img
+  display: block
+  outline: none
 
 \:focus
   outline: 0
 
+\::-moz-selection
+  background: $primary
+  color: $font-color-highlight
+
+\::selection
+  background: $primary
+  color: $font-color-highlight
+
 /* Reset [END] */
+
+// Standard-Klassen [BEGIN]
+
+.left
+  float: left
+
+.right
+  float: right
+
+.center
+  text-align: center
+
+.img-left
+  float: left
+  margin-right: 2em
+  margin-bottom: 1em
+
+.img-right
+  float: right
+  margin-left: 2em
+  margin-bottom: 1em
+
+.padding-l-r
+  padding: 0 $page-wrap-padding-l-r
+.padding-t-b
+  padding: $page-wrap-padding-t-b 0 $page-wrap-padding-t-b 0
+  margin: 0
+
+#main
+  border:
+    color: #eee
+    style: $border-style
+    width: 0 $border-width $border-width
+  background: #fff
+  padding-bottom: 60px
+  padding-top: 81px
+  section:last-child
+    > div
+      border-bottom-width: 0
+
+@media screen and (max-width: $breakpoint)
+  #main
+    position: absolute
+    top: 81px
+    border: none
+    box-shadow: 0 0 60px rgba(0,0,0,0.6)
+    min-height: 100%
+    padding-top: 0
+    z-index: 10
+    transition: left 1s
+    width: 100%
+
+
+@media screen and (max-width: $breakpoint)
+  .link-overlay
+    position: absolute
+    top: 0
+    height: 0
+    left: 0
+    right: 0
+    background: transparent
+    transition: background 1s
+    display: block
+    z-index: 10
+
+// Standard-Klassen [END]
+
+/* JS-less stuff */
+
+.no-js .carousel .slides > li:first-child
+  display: block
+
+.no-js .map
+  display: none
+
+/* Responsive Stuff [END] */

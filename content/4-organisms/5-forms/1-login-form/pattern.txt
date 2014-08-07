@@ -1,3 +1,0 @@
-Title: Login Form
-----
-Wrap: mock-container grey section

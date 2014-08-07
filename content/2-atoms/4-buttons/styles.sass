@@ -1,6 +1,10 @@
 /* Button [BEGIN] */
 
+.btn
+  margin: $page-wrap-padding-t-b 0
+
 button,
+.btn,
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
@@ -10,24 +14,25 @@ input[type="file"]
   width: 100%
   padding: 0.5em 1em
   cursor: pointer
-  color: $quadrary
+  color: $font-color-highlight
   text:
     align: center
     decoration: none
-  background: $secondary
-  border: none
+  background: $tertiary
+  border: $border-width solid $quadrary
   font-size: 1em
   font-family: $font-std
   border-radius: $radius
   transition: 0.3s
   &:hover
     text-decoration: none
-    color: $quadrary
-    background: $secondary - #222
+    color: $font-color-highlight
+    background: $tertiary - #222
   a
     text-decoration: none
   &:disabled
     background: $border-color + #111
+    border: $border-width $border-style $border-color
     cursor: default
 
 /* Button [END] */

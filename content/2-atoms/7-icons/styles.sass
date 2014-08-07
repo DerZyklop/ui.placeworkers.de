@@ -1,0 +1,34 @@
+
+@mixin icon($icon_name,$icon_w,$icon_h)
+  display: block
+  margin: 0 auto
+  width: #{$icon_w}px
+  height: #{$icon_h}px
+  background: center center no-repeat
+  background-image: url('../img/icon/#{$icon_name}.png')
+  font-size: 0
+  li:hover a &,
+  .active &
+    background-image: url('../img/icon/#{$icon_name}_hover.png')
+
+.icon_company
+  +icon(icon_company,74,33)
+  margin-top: 4px
+.icon_devices
+  +icon(icon_devices,74,33)
+  margin-top: 4px
+.icon_news
+  +icon(icon_news,74,33)
+  margin-top: 4px
+.icon_mail
+  +icon(icon_mail,74,33)
+  margin-top: 4px
+.icon_xing
+  +icon(icon_xing,49,59)
+.icon_twitter
+  +icon(icon_twitter,49,59)
+.icon_facebook
+  +icon(icon_facebook,49,59)
+.icon_rss
+  +icon(icon_rss,49,59)
+

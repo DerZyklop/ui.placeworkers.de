@@ -1,3 +1,0 @@
-Title: Full Sidebar
-----
-Wrap: sidebar section

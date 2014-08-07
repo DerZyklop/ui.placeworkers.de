@@ -1,3 +1,0 @@
-Title: Page Settings
-----
-Wrap: sidebar section

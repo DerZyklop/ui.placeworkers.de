@@ -1,0 +1,63 @@
+#main > .news-area,
+section > div
+  border-bottom:
+    color: $border-color
+    style: $border-style
+    width: $border-width
+
+.news-area
+  position: relative
+  overflow: hidden
+  .sap-label
+    position: static
+    background: #f1f1f1 url('../img/gray-label-bg.png')
+    width: auto
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    margin-bottom: 2em
+    padding: $page-wrap-padding-t-b $page-wrap-padding-l-r
+  .news-plugin
+    padding: $page-wrap-padding-t-b $page-wrap-padding-l-r $page-wrap-padding-t-b 0
+    float: none
+    width: auto
+  @media screen and (min-width: $breakpoint)
+    .news-plugin
+      width: 72%
+      float: left
+    .sap-label
+      position: absolute
+      margin-bottom: 0
+      right: 34px
+      bottom: 0
+      top: 0
+      width: 26%
+      img
+        margin: 20px auto
+        max-width: 100%
+
+$circle-size: 12px
+
+.news-nav
+  ul
+    float: right
+    margin: 0.4em 0
+    li
+      display: block
+      margin-left: 0.7em
+      a
+        height: $circle-size
+        width: $circle-size
+        font-size: 0
+        background: $border-color + #222
+        border:
+          color: $border-color
+          style: $border-style
+          width: $border-width
+        border-radius: $circle-size/2
+      &:hover,
+      &.active
+        a
+          background: $primary + #222
+          border-color: $primary - #222
+    &:hover a
+      background: $border-color
+      border-color: $border-color - #444

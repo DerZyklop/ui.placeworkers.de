@@ -1,0 +1,19 @@
+.width-wrap
+  max-width: $width-wrap-width
+  //width: $width-wrap-width
+  margin:
+    left: auto
+    right: auto
+  padding: 0 60px
+  background-image: url('../img/shadow-l.png'), url('../img/shadow-r.png')
+  background-position: top left, top right
+  background-repeat: no-repeat
+  position: relative
+  min-height: 100%
+
+@media screen and (max-width: $breakpoint)
+  .raw .col
+    width: 100%
+  .width-wrap
+    padding: 0
+    background: none

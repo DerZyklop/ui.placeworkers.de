@@ -1,2 +1,0 @@
-Title: Read-only field with icon
-----

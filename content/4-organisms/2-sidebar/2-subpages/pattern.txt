@@ -1,3 +1,0 @@
-Title: Subpages
-----
-Wrap: sidebar section

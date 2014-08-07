@@ -1,0 +1,56 @@
+
+@media screen and (max-width: $breakpoint)
+  .subnav-wrap
+    ul.subnav
+      li
+        a
+          line-height: 3.3em
+          background: #222
+
+@media screen and (min-width: $breakpoint)
+  .subnav-wrap
+    display: none
+    //display: block
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 10
+    min-width: 130px
+    margin-top: -10px
+    &:before
+      margin-top: -10px
+      content: '.'
+      display: block
+      font-size: 0
+      height: 0px
+      width: 0px
+      margin-left: 20px
+      border:
+        width: 10px
+        style: solid
+        color: transparent transparent $primary - #222 transparent
+      position: relative
+      z-index: 10
+    ul.subnav
+      box-shadow: 0 0 20px rgba(0,0,0,0.3)
+      background: #fff
+      border: 1px solid $primary - #222
+      border-radius: $radius
+      overflow: hidden
+      font-family: $font-highlight
+      li
+        width: 100%
+        white-space: nowrap
+        text-align: left
+        a
+          padding: 0.4em 1em
+
+@media screen and (min-width: $breakpoint)
+  .nav-wrap
+    ul.nav
+      > li
+        .subnav-wrap
+          li:hover
+            background: #b8d944
+            > a
+              color: #fff

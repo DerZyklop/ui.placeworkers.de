@@ -38,6 +38,11 @@ module.exports = (grunt) ->
           '<%= pkg.paths.src.css %>**/*.css'
         ]
         dest: '<%= pkg.paths.build.css %>styles.css'
+      external:
+        src: [
+          '<%= pkg.paths.src.css %>**/*.css'
+        ]
+        dest: '../placeworkers.com/assets/styles/styles.css'
       sass:
         src: [
           '<%= pkg.paths.src.sass %>**/*.sass'
@@ -109,7 +114,7 @@ module.exports = (grunt) ->
       # watch sass
       sass:
         files: ['<%= pkg.paths.src.sass %>**/*.sass']
-        tasks: ['concat:sass', 'newer:sass', 'newer:autoprefixer', 'newer:imageEmbed', 'newer:cssmin', 'concat:css']
+        tasks: ['concat:sass', 'newer:sass', 'newer:autoprefixer', 'newer:imageEmbed', 'newer:cssmin', 'concat:css', 'concat:external']
         options:
           livereload: true
 
@@ -171,5 +176,5 @@ module.exports = (grunt) ->
   # Default task(s)
   grunt.registerTask('scripts', ['coffee', 'eslint', 'concat:script'])
   grunt.registerTask('styles', ['sass', 'autoprefixer', 'imageEmbed', 'cssmin'])
-  grunt.registerTask('styles', ['concat:sass', 'sass', 'autoprefixer', 'concat:css'])
+  grunt.registerTask('styles', ['concat:sass', 'sass', 'autoprefixer', 'concat:css','concat:external'])
   grunt.registerTask('default', ['scripts', 'styles', 'concurrent'])

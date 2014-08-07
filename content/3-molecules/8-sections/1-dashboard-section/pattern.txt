@@ -1,3 +1,0 @@
-Title: Dashboard section
-----
-Wrap: grey section
