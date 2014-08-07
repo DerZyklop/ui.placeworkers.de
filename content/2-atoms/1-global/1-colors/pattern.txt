@@ -2,14 +2,14 @@ Title: Colors
 ----
 Colors:
 
-- label: White
-  code:  "900"
+- label: Primary
+  code:  "96BF0D"
 
-- label: Background
-  code:  "009999"
+- label: Secondary
+  code:  "0D2C80"
 
-- label: Border
-  code:  "999"
+- label: Tertiary
+  code:  "a6cd22"
 
-- label: Light Text
-  code:  "fefefe"
+- label: Quadrary
+  code:  "fff"

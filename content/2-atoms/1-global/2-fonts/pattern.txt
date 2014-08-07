@@ -6,4 +6,4 @@ Fonts:
   code:  'Droid Sans', helvetica
 
 - label: Secondary
-  code:  Merriweather, helvetica
+  code:  'Monda-Regular', helvetica
