@@ -1,6 +1,6 @@
 # ui-pattern
 
-This is my personal startpoint for new ui-projects.
+This is the generator for the css-file of placeworkers.com.
 
 ### Installation
 
